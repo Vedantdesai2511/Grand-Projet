@@ -73,3 +73,5 @@ On peut voir qu'on lance `pyinstaller.exe`, un exécutable que l'on a installé 
 3. `--icon Icon.ico`
 
   Ce paramètre assigne une icone à votre application, ici `Icon.ico` se trouve dans le GitHub et est simplement le logo du GP.
+
+Si vous avez des questions n'hésitez à m'envoyer un mail à **matteo.concas@ipsa.fr**.
