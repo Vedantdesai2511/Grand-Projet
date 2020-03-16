@@ -51,7 +51,7 @@ Si celui marche vous pouvez alors lancer le second script qui créera un exécut
 
 Je ne ferai pas de guide sur PyQt5 et PyQt5designer car il en existe déjà plusieurs sur internet. Nous allons donc nous interésser à comment passer d'un fichier Python à une application. Si l'on ouvre le fichier `Py_to_exe.bat` dans le bloc-note nous pouvons voir ces trois lignes :
 
-```Bash
+```Batch
 @ECHO OFF
 Python\Scripts\pyinstaller.exe GUI_Transport.py --onefile --noconsole  --icon Icon.ico
 PAUSE
