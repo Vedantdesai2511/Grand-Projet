@@ -2,9 +2,9 @@
   <img width ="200" height="200" src='https://github.com/matteo-concas/Grand-Projet/blob/master/Images/Logo%20Numerix.jpg'>
 </p>
  
-# Interface et créateur d'executable
+# Interface et créateur d'exécutable
 
-Le code et le guide que vous trouverez ici permet de pouvoir créer une interface assez facilement puis de transformer votre script python en executable qui marchera sur n'importe quel ordi (même ceux sans Python).
+Le code et le guide que vous trouverez ici permet de pouvoir créer une interface assez facilement puis de transformer votre script python en exécutable qui marchera sur n'importe quel ordi (même ceux sans Python).
 
 ## Installation 
 
@@ -15,7 +15,7 @@ Nous allons maintenant devoir installer toutes les librairies **obligatoires**, 
 d:
 cd D:\Cours\Interface
 ``` 
-Une fois que vous êtes dans votre dossier vous éxécuterez (toujours depuis l'invite de commande) les commandes suivantes :
+Une fois que vous êtes dans votre dossier vous exécuterez (toujours depuis l'invite de commande) les commandes suivantes :
 ```Bash
 Python\Scripts\pip.exe install -r requirements.txt
 ```
@@ -38,16 +38,16 @@ Qui aura l'effet d'installer toutes les librairies se trouvant dans le fichier `
 
 * PyInstaller
 
-  La librairie qui nous permettra de transformer le code Python en éxécutable.
+  La librairie qui nous permettra de transformer le code Python en exécutable.
  
 Nous allons maintenant vérifier que tout est bien installé.
 
 Dans le dossier ce trouvent deux scripts, `PyQt Designer.bat` et `Py_to_exe.bat`. Lancer le premier en double-cliquant dessus et la fenêtre de pyqt5designer devrait normalement s'ouvrir et ressembler à ça :
 ![alt text](https://github.com/matteo-concas/Grand-Projet/blob/master/Images/image.png)
 
-Ci celui marche vous pouvez alors lancer le second script qui créera un éxécutable à partir du ficher `GUI_Transport.py`. Si tout c'est bien passé vous pourrez alors retrouver le .exe dans le dossier **dist** qui aura été créer durant la création de l'éxécutable.
+Si celui marche vous pouvez alors lancer le second script qui créera un éxécutable à partir du ficher `GUI_Transport.py`. Si tout c'est bien passé vous pourrez alors retrouver le .exe dans le dossier **dist** qui aura été créer durant la création de l'exécutable.
 
-## Création de votre propre éxécutable
+## Création de votre propre exécutable
 
 Je ne ferai pas de guide sur PyQt5 et PyQt5designer car il en existe déjà plusieurs sur internet. Nous allons donc nous interésser à comment passer d'un fichier Python à une application. Si l'on ouvre le fichier `Py_to_exe.bat` dans le bloc-note nous pouvons voir ces trois lignes :
 
@@ -60,15 +60,15 @@ Celle qui nous interesse est celle du milieu, la commande
 ```Bash
 Python\Scripts\pyinstaller.exe GUI_Transport.py --onefile --noconsole  --icon Icon.ico
 ```
-On peut voir qu'on lance `pyinstaller.exe`, un éxécutable que l'on a installé avec la librairie PyInstaller. Nous donnons ensuite en argument notre fichier Python, `GUI_Transport.py`, puis trois autres paramètres.
+On peut voir qu'on lance `pyinstaller.exe`, un exécutable que l'on a installé avec la librairie PyInstaller. Nous donnons ensuite en argument notre fichier Python, `GUI_Transport.py`, puis trois autres paramètres.
 
 1. `--onefile`
 
-  Ce paramètre permet de rassembler tous les fichiers produits dans un seul fichier éxécutable, l'éxécutable sera plus gros mais il sera plus facile à distribuer et ne nécessitera pas la création d'un installateur.
+  Ce paramètre permet de rassembler tous les fichiers produits dans un seul fichier exécutable, il sera plus gros mais aussi plus facile à distribuer et ne nécessitera pas la création d'un installateur.
 
 2. `--noconsole`
 
-  Ce paramètre permet simplement de cacher la console à chaque fois que vous lancez votre éxécutable.
+  Ce paramètre permet simplement de cacher la console à chaque fois que vous lancez votre application.
 
 3. `--icon Icon.ico`
 
