@@ -4,7 +4,7 @@
  
 # Interface et créateur d'exécutable
 
-Le code et le guide que vous trouverez ici permet de pouvoir créer une interface assez facilement puis de transformer votre script python en exécutable qui marchera sur n'importe quel ordi (même ceux sans Python).
+Le code et le guide que vous trouverez ici permet de pouvoir créer une interface assez facilement puis de transformer votre script python en exécutable qui marchera sur n'importe quel ordinateur (même ceux sans Python).
 
 ## Installation 
 
