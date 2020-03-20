@@ -46,7 +46,7 @@ Qui aura l'effet d'installer toutes les librairies se trouvant dans le fichier `
  
 Nous allons maintenant vérifier que tout est bien installé.
 
-Dans le dossier ce trouvent deux scripts, `PyQt Designer.bat` et `Py_to_exe.bat`. Lancez le premier en double-cliquant dessus et la fenêtre de pyqt5designer devrait normalement s'ouvrir et ressembler à ça :
+Dans le dossier se trouvent deux scripts, `PyQt Designer.bat` et `Py_to_exe.bat`. Lancez le premier en double-cliquant dessus et la fenêtre de pyqt5designer devrait normalement s'ouvrir et ressembler à ça :
 ![alt text](https://github.com/matteo-concas/Grand-Projet/blob/master/Images/image.png)
 
 Si celui marche vous pouvez alors lancer le second script qui créera un exécutable à partir du ficher `GUI_Transport.py`. Si tout c'est bien passé vous pourrez alors retrouver le .exe dans le dossier **dist** qui aura été crée durant la création de l'exécutable.
