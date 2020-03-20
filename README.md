@@ -10,6 +10,10 @@ Le code et le guide que vous trouverez ici permet de pouvoir créer une interfac
 
 Pour commencer télécharger ce GitHub dans un dossier de votre choix, il se trouve personellement dans un dossier nommé 'Interface'. Une fois ceci fait, créer un dossier Python où vous installerez Python 3.6 (et **seulement** 3.6) qui est téléchargeable [ici](https://www.python.org/ftp/python/3.6.0/python-3.6.0-amd64.exe "Python 3.6.0").
 
+Votre dossier devrait donc ressembler à ça :
+
+![alt text](https://github.com/matteo-concas/Grand-Projet/blob/master/Images/Dossier.png)
+
 Nous allons maintenant devoir installer toutes les librairies **obligatoires**, vous pourrez toujours rajouter des librairies spécifique à votre code plus tard. Pour commencer ouvrez votre invite de commande (Command Prompt en anglais) et naviguez vers le dossier où vous avez téléchargé le GitHub à l'aide de la commande `cd`. Notez que dans le cas où votre dossier ce trouve sur un autre disque dur que C: vous devrez changer de disque dur avec la commande `[Lettre de votre disque dur]:`. Par exemple dans mon cas je ferais :
 ```Bash
 d:
