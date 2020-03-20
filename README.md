@@ -68,7 +68,7 @@ w = AppWindow()
 w.show()
 sys.exit(app.exec_())
 ```
-Vous pouvez ensuite rajouter votre code dans la classe sous forme de fonctions. Vous pouvez par exemple avoir une fonction où vous faites la résolution d'équation et une autre où vous affichez les résultats etc.
+Vous pouvez ensuite rajouter votre code dans la première classe sous forme de fonctions. Vous pouvez par exemple avoir une fonction où vous faites la résolution d'équation et une autre où vous affichez les résultats etc.
 
 ## Création de votre propre exécutable
 
