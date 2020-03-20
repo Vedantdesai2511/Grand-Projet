@@ -8,7 +8,7 @@ Le code et le guide que vous trouverez ici permet de pouvoir créer une interfac
 
 ## Installation 
 
-Pour commencer télécharger ce GitHub dans un dossier de votre choix. Une fois ceci fait, créer un dossier Python où vous installerez Python 3.6 (et **seulement** 3.6) qui est téléchargeable [ici](https://www.python.org/ftp/python/3.6.0/python-3.6.0-amd64.exe "Python 3.6.0").
+Pour commencer télécharger ce GitHub dans un dossier de votre choix, il se trouve personellement dans un dossier nommé 'Interface'. Une fois ceci fait, créer un dossier Python où vous installerez Python 3.6 (et **seulement** 3.6) qui est téléchargeable [ici](https://www.python.org/ftp/python/3.6.0/python-3.6.0-amd64.exe "Python 3.6.0").
 
 Nous allons maintenant devoir installer toutes les librairies **obligatoires**, vous pourrez toujours rajouter des librairies spécifique à votre code plus tard. Pour commencer ouvrez votre invite de commande (Command Prompt en anglais) et naviguez vers le dossier où vous avez téléchargé le GitHub à l'aide de la commande `cd`. Notez que dans le cas où votre dossier ce trouve sur un autre disque dur que C: vous devrez changer de disque dur avec la commande `[Lettre de votre disque dur]:`. Par exemple dans mon cas je ferais :
 ```Bash
@@ -47,9 +47,32 @@ Dans le dossier ce trouvent deux scripts, `PyQt Designer.bat` et `Py_to_exe.bat`
 
 Si celui marche vous pouvez alors lancer le second script qui créera un exécutable à partir du ficher `GUI_Transport.py`. Si tout c'est bien passé vous pourrez alors retrouver le .exe dans le dossier **dist** qui aura été crée durant la création de l'exécutable.
 
+
+## Création de l'interface avec PyQt5
+
+Après avoir lancé le premier script, `PyQt Designer.bat`, vous arrivez sur l'écran de création de l'interface où vous pouvez placer des boutons, champs de texte, images etc. Une fois ceci fait, si vous sauvegardez l'interface vous aurez un fichier .ui et non un fichier Python. Nous allons donc devoir exécuter une commande depuis l'invite de commande pour obtenir le fichier Python. Toujours dans le dossier principal où l'on a lancer toutes les commandes précédentes, remplacez `fichier` par le nom de votre fichier et tapez :
+```Bash
+Python\Scripts\pyuic5 fichier.ui -o fichier.py
+```
+Vous aurez ensuite votre fichier Python avec une classe. Pour pouvoir exécuter l'interface il faudra lancer la classe en rajoutant à la fin du fichier Python ces lignes :
+```Python
+class AppWindow(QDialog) :
+    def __init__(self) :
+        super().__init__()
+        self.ui = Ui_Dialog()
+        self.ui.setupUi(self)
+        self.show()
+
+app = QApplication(sys.argv)
+w = AppWindow()
+w.show()
+sys.exit(app.exec_())
+```
+Vous pouvez ensuite rajouter votre code dans la classe sous forme de fonctions. Vous pouvez par exemple avoir une fonction où vous faites la résolution d'équation et une autre où vous affichez les résultats etc.
+
 ## Création de votre propre exécutable
 
-Je ne ferai pas de guide sur PyQt5 et PyQt5designer car il en existe déjà plusieurs sur internet. Nous allons donc nous interésser à comment passer d'un fichier Python à une application. Si l'on ouvre le fichier `Py_to_exe.bat` dans le bloc-note nous pouvons voir ces trois lignes :
+Nous allons maintenant nous interésser à comment passer d'un fichier Python à une application. Si l'on ouvre le fichier `Py_to_exe.bat` dans le bloc-note nous pouvons voir ces trois lignes :
 
 ```Batch
 @ECHO OFF
