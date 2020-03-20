@@ -63,7 +63,7 @@ Vous aurez ensuite votre fichier Python avec une classe. Pour pouvoir exécuter 
 class AppWindow(QDialog) :
     def __init__(self) :
         super().__init__()
-        self.ui = Ui_Dialog()
+        self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.show()
 
@@ -72,6 +72,7 @@ w = AppWindow()
 w.show()
 sys.exit(app.exec_())
 ```
+Ici `Ui_MainWindow()` est la classe que PyQt Designer a crée, si vous renommez la première classe de votre script vous devrez aussi changer cette ligne.
 Vous pouvez ensuite rajouter votre code dans la première classe sous forme de fonctions. Vous pouvez par exemple avoir une fonction où vous faites la résolution d'équation et une autre où vous affichez les résultats etc.
 
 ## Création de votre propre exécutable
