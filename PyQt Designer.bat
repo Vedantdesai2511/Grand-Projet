@@ -1,2 +1,2 @@
 @ECHO OFF
-pyqt5designer
+Python\Scripts\pyqt5designer
