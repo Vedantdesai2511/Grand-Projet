@@ -3,3 +3,4 @@ pyqt5-tools
 pyqtgraph
 numpy
 pyinstaller
+pyopengl
