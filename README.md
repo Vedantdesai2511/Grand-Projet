@@ -36,6 +36,9 @@ Qui aura l'effet d'installer toutes les librairies se trouvant dans le fichier `
 
   Une librairie équivalente à Matplotlib mais qui gère les animations de manière plus efficace et est plus facile à implémenter dans une interface graphique.
  
+* PyOpenGl
+  Une librairie permettant de faire des graphiques 3D de manière efficace en utilisant l'API OpenGL.
+ 
 * Numpy
 
   Librairie mathématique permettant de faire de l'algèbre linéaire dans Python.
