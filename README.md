@@ -76,7 +76,7 @@ w = AppWindow()
 w.show()
 sys.exit(app.exec_())
 ```
-Ici `Ui_Dialog()` est la classe que PyQt Designer a crée (celle qui contient votre interface et le reste de votre code), si vous renommez la première classe de votre script vous devrez aussi changer cette ligne.
+Ici `Ui_Dialog()` est la classe que PyQt Designer a crée (celle qui contient votre interface et le reste de votre code), si vous renommez la première classe de votre script vous devrez aussi changer cette ligne. Généralement votre première classe pourra aussi s'appeler `Ui_MainWindow`, il faudra alors changer `QDialog` par `QMainWindow` tout en vérifiant bien que l'objet soit importé au début de votre code (ces deux objets peuvent être importés depuis `PyQt5.QtWidgets`).
 Vous pouvez ensuite rajouter votre code dans la première classe sous forme de fonctions. Vous pouvez par exemple avoir une fonction où vous faites la résolution d'équation et une autre où vous affichez les résultats etc.
 
 ## Création de votre propre exécutable
