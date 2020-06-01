@@ -21,7 +21,7 @@ cd D:\Cours\Interface
 ``` 
 Une fois que vous êtes dans votre dossier vous exécuterez (toujours depuis l'invite de commande) les commandes suivantes :
 ```Bash
-Python\Scripts\pip.exe install -r requirements.txt
+Python\Scripts\pip install -r requirements.txt
 ```
 Qui aura l'effet d'installer toutes les librairies se trouvant dans le fichier `requirements.txt`. Les librairies sont les suivantes :
 * PyQt5 
