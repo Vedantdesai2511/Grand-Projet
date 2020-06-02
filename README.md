@@ -42,7 +42,7 @@ Qui aura l'effet d'installer toutes les librairies se trouvant dans le fichier `
  
 * Numpy
 
-  Librairie mathématique permettant de faire de l'algèbre linéaire dans Python.
+  Librairie mathématique permettant de faire des mathématiques plus avancées dans Python.
 
 * PyInstaller
 
